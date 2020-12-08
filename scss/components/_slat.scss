@@ -1,0 +1,26 @@
+.slat > ul > li {
+     border-bottom: 1px solid $peppercorn-30;
+     padding: 1em;
+     &:first-child {
+       border-top: 1px solid $peppercorn-30;
+     }
+     .slat_unit {
+       .slat_unit_name {
+         color: $kale;
+       }
+       .slat_unit_date {
+         font-style: italic;
+         font-size: 0.875em;
+       }
+     }
+     .slat_unit_action {
+       margin-top: 1em;
+       text-align: right;
+     }
+     .slat_unit_stats {
+       > ul > li {
+         border-bottom: 1px solid $peppercorn-15;
+         padding: 1em;
+       }
+     }
+}

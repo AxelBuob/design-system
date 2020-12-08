@@ -1,0 +1,11 @@
+.hero {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+  &_copy {
+    margin-top: 1.875rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0
+  }
+}

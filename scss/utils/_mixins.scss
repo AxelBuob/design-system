@@ -1,0 +1,28 @@
+// Typo
+@mixin font-size($map) {
+  @each $key, $value in $map {
+      @if($key == null) {
+        font-size: $value;
+      }
+      @else {
+        @media screen and (min-width: $key) {
+          font-size: $value;
+        }
+      }
+  }
+}
+
+// Grid
+@mixin col-props($i, $columns, $gutter) {
+  flex: 0 0 (100%  / $columns * $i);
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+@mixin columns-loop($name,$columns, $gutter) {
+  @for $i from 1 through $columns {
+    &-#{$name}-#{$i} {
+      @include col-props($i, $columns, $gutter);
+    }
+  }
+}

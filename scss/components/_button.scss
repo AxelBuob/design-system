@@ -1,0 +1,33 @@
+button {
+  text-shadow: none;
+  cursor: pointer;
+  color: $button-color;
+  background-color: $button-background-color;
+  font-weight: $button-font-weigth;
+  text-transform: capitalize;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  overflow: hidden;
+  padding: $button-padding;
+  border: $button-border;
+  border-radius: $button-border-radius;
+  font-size: $button-font-size;
+  height: $button-height;
+  line-height: $button-line-height;
+  display: inline-block;
+  &.button {
+    &-important {
+      color: $button-color-important;
+      background-color: $button-background-color-important;
+    }
+    &-primary {
+      color: $button-color-primary;
+      background-color: $button-background-color-primary;
+    }
+    &-caution {
+      color: $button-color-caution;
+      background-color: $button-background-color-caution;
+    }
+  }
+}

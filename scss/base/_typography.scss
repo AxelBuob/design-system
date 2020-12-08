@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--brand;
+  font-weight: $font-weight--heading;
+  line-height: $line-height--heading;
+}
+
+p, .copy, .copy p {
+  font-size: $font-size--base;
+  font-weight: $font-weight--base;
+  line-height: $line-height--base;
+}
+
+h1 {
+  @include font-size($h1-font-sizes);
+}
+
+h2 {
+  @include font-size($h2-font-sizes);
+}
+
+h3 {
+  font-size: $h3-font-sizes;
+  //line-height: ;
+}
+
+h4 {
+  font-size: $h4-font-sizes;
+  line-height: 1.5625rem;
+}
